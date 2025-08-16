@@ -78,14 +78,15 @@ class Flashlight(ft.Service):
         """
         if self.on:
             await self.turn_off()
-        await self.turn_on()
+        else:
+            await self.turn_on()
 
     async def is_available(self):
         """
         Checks if the flashlight is available on the device.
         """
         r = await self._invoke_method("is_available")
-        if r is bool:
+        if isinstance(r, bool):
             return r
         else:  # error occured
             error_msg = r.get("error_msg")
