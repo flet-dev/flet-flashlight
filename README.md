@@ -1,3 +1,7 @@
+# THIS PROJECT HAS BEEN ARCHIVED
+
+`flet-flashlight` is now part of the main [Flet repository](https://github.com/flet-dev/flet/tree/main/sdk/python/packages/flet-flashlight).
+
 # flet-flashlight
 
 [![pypi](https://img.shields.io/pypi/v/flet-flashlight.svg)](https://pypi.python.org/pypi/flet-flashlight)
